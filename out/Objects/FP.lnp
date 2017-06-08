@@ -1,0 +1,17 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\adc.o"
+".\objects\uart.o"
+".\objects\key.o"
+".\objects\pwm.o"
+".\objects\init.o"
+".\objects\i2c.o"
+".\objects\gpio.o"
+".\objects\ui.o"
+".\objects\lcd1602.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\FP.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\FP.map" -o .\Objects\FP.axf
